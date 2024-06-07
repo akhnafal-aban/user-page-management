@@ -1,0 +1,158 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0rem 3rem 0 3rem;
+  text-align: center;
+}
+
+.col-1 {
+  width: 35%;
+}
+
+.col-2 {
+  width: 65%;
+  text-align: left;
+  padding: 0 30px 0 30px;
+  align-self: baseline;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+main {
+  display: flex;
+  align-items:baseline;
+  justify-content: center;
+}
+
+
+
+.search-box {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin: 10px 0 10px 0;
+}
+
+.search-box:focus {
+  border-color: #5c9ded;
+  box-shadow: 0 0 8px rgba(92, 157, 237, 0.6);
+  outline: none;
+}
+
+.search-box::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.page-controller {
+  display: flex;
+  align-items: center;
+  justify-content:space-between
+}
+
+.previous {
+  width: auto;
+}
+
+.next {
+  width: auto;
+}
+
+.user-item {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.user-item:hover {
+  background-color: #f1f1f1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-form,
+h2 {
+  margin-bottom: 20px;
+}
+
+.input-field,
+.select-field,
+.submit-button,
+.delete-button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border:0cap;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-field::placeholder,
+.select-field::placeholder,
+.submit-button::placeholder,
+.delete-button::placeholder {
+  color: #fff; 
+}
+
+.input-field:focus,
+.select-field:focus {
+  border-color: #5c9ded;
+  box-shadow: 0 0 8px rgba(92, 157, 237, 0.6);
+  outline: none;
+}
+
+.submit-button,
+.delete-button {
+  background-color: #242424;
+  color: #fff;
+  border: 1px solid #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover,
+.delete-button:hover {
+  background-color: #4acea0;
+}
+
+.submit-button:active,
+.delete-button:active {
+  background-color: #1b8b46;
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: center;
+  }
+
+  .col-1,
+  .col-2 {
+    width: 100%;
+    padding: 0;
+  }
+}
