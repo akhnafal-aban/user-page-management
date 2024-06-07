@@ -85,7 +85,7 @@ function App() {
                 <div><strong>Email:</strong> {user.email}</div>
                 <div><strong>Gender:</strong> {user.gender}</div>
                 <div><strong>Status:</strong> {user.status}</div> */}
-                {user.name}
+                {user.id} - {user.name}
               </li>
             ))}
           </ul>
