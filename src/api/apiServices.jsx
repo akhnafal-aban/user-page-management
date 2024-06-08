@@ -1,65 +1,6 @@
 const API_URL = 'https://gorest.co.in/public-api/users';
 const API_KEY = 'REPLACE_WITH_GOREST_TOKEN';
 
-
-// // Ini adalah fungsi untuk mengambil data dari API
-// const getData = () => {
-//   fetch("https://gorest.co.in/public/v2/users", {
-//     method: "GET",
-//     headers: {
-//       Authorization:
-//         "Bearer REPLACE_WITH_GOREST_TOKEN",
-//       // Menentukan bahwa data yang dikirim dalam body permintaan adalah dalam format JSON. Ini penting agar server dapat memproses data dengan benar.
-//       "Content-Type": "application/json",
-//     },
-//   })
-//     .then((res) => res.json())
-//     .then((data) => console.log(data))
-//     .catch((error) => console.error("Error:", error))
-// }
-
-// // Ini adalah fungsi untuk mengirim data ke API
-// const postData = () => {
-//   const dataToSend = {
-//     // Menambahkan 'User' agar tidak deprecated
-//     name: nameUser,
-//     email: emailUser,
-//     gender: genderUser,
-//     status: statusUser,
-//   }
-
-//   fetch("https://gorest.co.in/public/v2/users", {
-//     method: "POST",
-//     headers: {
-//       Authorization:
-//         "Bearer REPLACE_WITH_GOREST_TOKEN",
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify(dataToSend)
-//   })
-//   .then((res) => res.json())
-//   .then((data) => console.log(data))
-//   .catch((error) => console.error("Error:" + error))
-// }
-
-
-// const deleteData = () => {
-//     fetch("https://gorest.co.in/public/v2/users/{deleteId}", {
-//       method: "DELETE",
-//       headers: {
-//         Authorization:
-//           "Bearer REPLACE_WITH_GOREST_TOKEN",
-//         // Menentukan bahwa data yang dikirim dalam body permintaan adalah dalam format JSON. Ini penting agar server dapat memproses data dengan benar.
-//         "Content-Type": "application/json",
-//       },
-//     })
-//       .then((res) => res.json())
-//       .then((data) => console.log(data))
-//       .catch((error) => console.error("Error:", error))
-//   }
-
-// export { getData, postData, deleteData }
-
 export const getData = async (page = 1) => {
   try {
     const response = await fetch(`${API_URL}?page=${page}`, {
