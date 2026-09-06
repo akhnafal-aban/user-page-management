@@ -2,6 +2,8 @@
 
 User Page Management adalah aplikasi web sederhana untuk mengelola daftar pengguna. Aplikasi ini memungkinkan pengguna untuk melihat daftar pengguna, menambahkan pengguna baru, menghapus pengguna, dan mencari pengguna berdasarkan nama.
 
+Live demo: https://tantangan-uasc.vercel.app
+
 ## Fitur
 
 1. **Lihat Daftar Pengguna**: Menampilkan daftar pengguna dari API.
@@ -20,22 +22,25 @@ User Page Management adalah aplikasi web sederhana untuk mengelola daftar penggu
 
 1. Clone repositori ini:
    ```bash
-   git clone https://github.com/AKHNAFAL/Tantangan-UASC
+   git clone https://github.com/akhnafal-aban/user-page-management
+   ```
 2. Masuk ke direktori proyek:
-    ```bash
-    cd user-page-management
+   ```bash
+   cd user-page-management
+   ```
 3. Instal dependensi:
-    ```bash
-    npm install
+   ```bash
+   npm install
+   ```
 4. Jalankan aplikasi:
-    ```bash 
-    npm start
+   ```bash
+   npm run dev
+   ```
 5. Aplikasi akan dijalankan pada lokalhost dengan port yang sudah tertera diterminal, seperti berikut:
-    ```bash
-      ➜  Local:   http://localhost:5173/
-      ➜  Network: use --host to expose
-      ➜  press h + enter to show help
-
+   ```bash
+   ➜  Local:   http://localhost:5173/
+   ➜  Network: use --host to expose
+   ➜  press h + enter to show help
+   ```
 
 ### Author: NOOR AKHNAFAL ABAN
-
